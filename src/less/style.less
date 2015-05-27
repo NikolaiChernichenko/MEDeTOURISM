@@ -1,0 +1,929 @@
+@import 'reset.less';
+@import 'bootstrap.css';
+@import 'sprite.css';
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic);
+
+@bodyFamily : 'Lato', 'sans-serif';
+@textColor: #474A4D;
+@btnTransitions: all .2s;
+
+/* For modern browsers */
+.clearfix{
+  zoom:1;
+  &:before,
+  &:after{ content:""; display:table; }
+  &:after{ clear: both; }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: @bodyFamily;
+    overflow-x: hidden;
+    color: @textColor;
+    background: #FAF8F7;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 620px;
+    background: url('../img/header_bg.jpg') center top;
+    background-size: cover;
+}
+.navbar {
+    padding-top: 30px;
+}
+.logo {
+    padding-left: 0;
+    img {
+        width: 200px;
+    }
+}
+.navbar_links {
+    padding-right: 0;
+}
+.signin {
+    color: #FB4237;
+    padding-top: 5px;
+    position: relative;
+    top: 10px;
+    left: 2px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: @btnTransitions;
+    &:hover {
+        transition: @btnTransitions;
+    }
+}
+.request_bid {
+    background: #FB4237;
+    color: #fff;
+    border: none;
+    outline: 0;
+    float: right;
+    padding: 10px 14px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: @btnTransitions;
+    &:hover {
+        color: #fff;
+        background: #ED372D;
+        transition: @btnTransitions;
+    }
+}
+
+//Video&Stats Section
+.video_stats {
+    margin-top: 77px;
+    h1 {
+        font-size: 2.8rem;
+        line-height: 3.1rem;
+        color: #fff;
+        span {
+            font-weight: 600;
+        }
+    }
+    .play_v {
+        background: none;
+        border: solid 2px #fff;
+        width: 320px;
+        height: 40px;
+        margin: 25px 0 0 0;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        position: relative;
+        letter-spacing: 2px;
+        text-indent: 20px;
+        transition: @btnTransitions;
+        i {
+            padding-right: 28px;
+            position: absolute;
+            left: 70px;
+            top: 12px;
+            font-size: 0.8rem
+        }
+        &:hover {
+            background: #fff;
+            color: @textColor;
+            transform: all 03.3s;
+            transition: @btnTransitions;
+        }
+    }
+    .how_w {
+        background: none;
+        border: solid 2px #fff;
+        width: 320px;
+        height: 40px;
+        margin: 10px 0 0 0;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: @btnTransitions;
+        &:hover {
+            background: #fff;
+            color: @textColor;
+            transition: @btnTransitions;
+        }
+    }
+    .stats_section {
+        padding: 118px 0 0 7px;
+        letter-spacing: 3px;
+        h2 {
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        hr {
+            opacity: .4;
+            margin: 9px 0 0px;
+            width: 235px;
+        }
+    }
+    .total {
+        color: #fff;
+        padding-top: 16px;
+        .number {
+            font-size: 2.81rem;
+            font-weight: 100;
+            font-style: italic;
+            float: left;
+            letter-spacing: 1px;
+        }
+        .total_description {
+            font-size: 1rem;
+            padding-left: 10px;
+            letter-spacing: 0px;
+            width: 160px;
+            float: right;
+            line-height: 22px;
+            font-weight: 400;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+//Search bar
+.search_section {
+    margin-top: 85px;
+    height: 120px;
+    background: rgba(93, 98, 103, 0.15);
+    .form-control {
+        float: left;
+        width: 412px;
+        padding-left: 30px;
+        height: 47px;
+        width: 412px;
+        border-right: solid 1px #E1E1E1;
+        padding-left: 15px;
+        font-size: 1rem;
+        border-radius: 0;
+        border-top-left-radius: 5px!important;
+        border-bottom-left-radius: 5px!important;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .select {
+        float: left;
+    }
+    .input-group-btn {
+        float: left;
+        margin: 26px 0 0 -18px;
+    }
+    .input-group {
+        width: 800px;
+    }
+    .dropdown-toggle {
+        border-radius: 0;
+        box-shadow: none;
+        outline: 0;
+        padding: 6px 0 5px 10px;
+        margin-left: -5px;
+        height: 47px;
+        width: 235px;
+        border-left: 0;
+        color: #655D62;
+        &:active,
+        &:focus,
+        &:hover {
+            background: #fff;
+        }
+    }
+    .search_btn {
+        background: #655D62;
+        color: #fff;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: .875rem;
+        font-weight: 600;
+        width: 170px;
+        height: 47px;
+        border: none;
+        transition: @btnTransitions;
+        &:hover {
+            background: #ED372D;
+            transition: @btnTransitions;
+        }
+    }
+    .container {
+        margin: 25px auto;
+    }
+    p {
+        color: #fff;
+        padding-bottom: 10px;
+    }
+    .destination {
+        margin-left: -5px;
+    }
+}
+
+//Main Content Section
+.commence_bidding_section {
+    padding-top: 66px;
+    h1 {
+        font-size: 1.375rem;
+        color: @textColor;
+        text-align: center;
+        text-transform: uppercase;
+        span {
+            font-weight: 600;
+        }
+    }
+    .col-lg-10 {
+          letter-spacing: 2.2px;
+          padding: 0;
+    }
+    .hr_left {
+        margin: 12px 0 0 -15px;
+        width: 52px;
+        background: #D7D6D3;
+        height: 1px;
+
+    }
+    .hr_right {
+        margin: 12px 0 0 16px;
+        width: 52px;
+        background: #D7D6D3;
+        height: 1px;
+
+    }
+}
+.commence_bidding_text {
+    margin-top: 47px;
+    line-height: 1.1rem;
+    i {
+          display: inline-block;
+          position: relative;
+          &:before {
+              position: absolute;
+              top: 0;
+              left: -65px;
+              content: '';
+          }
+    }
+    .flash_icon {
+        padding: 0;
+        margin-left: 85px;
+    }
+}
+.request_bid_section {
+        margin: 50px 0px 0 147px;
+    .request_button {
+        width: 320px;
+        height: 60px;
+        background: #FB4237;
+        color: #fff;
+        border: none;
+        outline: 0;
+        padding: 10px 14px;
+        text-indent: 50px;
+        letter-spacing: 3px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin: 0 0 0 12px;
+        border-bottom: solid 2px #CF0B08;
+        border-radius: 4px;
+        transition: @btnTransitions;
+            &:hover {
+                color: #fff;
+                background: #ED372D;
+                transition: @btnTransitions;
+            }
+        i:before {
+            position: absolute;
+            top: -17px;
+            left: -43px;
+            content: '';
+        }
+        i {
+              display: inline-block;
+              position: relative;
+        }
+    }
+        .hr_left {
+            margin: 31px 0px 0 -145px;
+            width: 280px;
+        }
+        .hr_right {
+            margin: 31px 0 0 164px;
+            width: 280px;
+        }
+}
+
+//Featured Procedure
+.featured_procedure {
+    padding: 83px 0 0 1px;
+        i:before {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    content: '';
+        }
+        i {
+              display: inline-block;
+              position: relative;
+              width: 150px;
+              height: 70px;
+        }
+        h1 {
+            font-size: 2.8125rem;
+            text-transform: none;
+            padding: 0;
+              margin: 8px 0 0 -4px;
+            text-align: left;
+        }
+        h3 {
+            font-size: 1rem;
+            padding-top: 27px;
+            line-height: 22px;
+            span {
+                color: #FB4237;
+            }
+        }
+        .procedures_block {
+            margin-top: -20px;
+        }
+        .procedures {
+            h1 {
+                font-size: 2rem;
+                color: #fff;
+                text-align: center;
+                padding: 150px 0 20px;
+            }
+            h2 {
+                font-size: 0.75rem;
+                letter-spacing: 2px;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+                padding: 0 0 25px;
+            }
+        }
+        .procedures_prices {
+            //padding: 25px;
+            hr {
+                margin: 20px 15px 10px;
+            }
+        }
+        .procedure_1_title {
+            color: #fff;
+            font-size: .75rem;
+            float:left;
+            padding-left: 17px
+        }
+        .procedure_1_price {
+            color: #fff;
+            font-size: .75rem;
+            float:right;
+            padding-right: 17px;
+        }
+        .procedures_1 {
+            width: 235px;
+            height: 300px;
+            background: url(../img/cosmetics.jpg)
+        }
+        .procedures_2 {
+            width: 235px;
+            height: 300px;
+            background: url(../img/dentistry.jpg)
+        }
+        .procedures_3 {
+            width: 235px;
+            height: 300px;
+            background: url(../img/orthopedics.jpg)
+        }
+}
+.tiny_text {
+    font-size: .75rem;
+    color: #687279!important;
+    padding-top: 10px;
+}
+.popular_locations {
+    padding: 83px 0 0 1px;
+        i:before {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    content: '';
+        }
+        i {
+              display: inline-block;
+              position: relative;
+              width: 150px;
+              height: 70px;
+        }
+        .location_1 {
+            width: 235px;
+            height: 300px;
+            background: url(../img/malaysia.jpg)
+        }
+        .location_2 {
+            width: 235px;
+            height: 300px;
+            background: url(../img/thailand.jpg)
+        }
+        .location_3 {
+            width: 235px;
+            height: 300px;
+            background: url(../img/singapore.jpg)
+        }
+        h1 {
+            font-size: 2.8125rem;
+            text-transform: none;
+            padding: 0;
+              margin: 8px 0 0 -4px;
+            text-align: left;
+        }
+        h3 {
+            font-size: 1rem;
+            padding-top: 27px;
+            line-height: 22px;
+            span {
+                color: #FB4237;
+            }
+        }
+        .locations {
+            margin-top: -25px;
+            h1 {
+                    font-size: 2rem;
+                    color: #fff;
+                    font-weight: 600;
+                    text-align: center;
+                    padding: 150px 0 20px;
+                }
+            h2 {
+                    font-size: .875rem;
+                    color: #fff;
+                    padding: 15px 15px 15px;
+                    border: 2px solid #fff;
+                    border-radius: 3px;
+                    text-align: center;
+                    margin: 0 35px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+            }
+        }
+}
+
+//- Featured Hospitals
+.featured_hospitals {
+    padding: 83px 0 0 1px;
+    .globe_icon{
+        i:before {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    content: '';
+        }
+        i {
+              display: inline-block;
+              position: relative;
+              width: 150px;
+              height: 70px;
+        }
+    }
+        h1 {
+            font-size: 2.8125rem;
+            text-transform: none;
+            padding: 0;
+              margin: 8px 0 0 -4px;
+            text-align: left;
+        }
+        h3 {
+            font-size: 1rem;
+            padding-top: 27px;
+            line-height: 22px;
+            span {
+                color: #FB4237;
+            }
+        }
+    .hospitals_block {
+        width: 360px;
+        height: 152px;
+        border: 1px solid #D7D6D3;
+        background: #fff;
+        margin: -11px 30px 30px 13px;
+    }
+    img {
+        float: left;
+        display: block;
+        padding-right: 20px;
+    }
+    .hospital_title {
+        color: #FC3F34;
+        font-weight: 600;
+        padding: 18px 0 0 0;
+    }
+    .hospital_location {
+        font-size: .75rem;
+        color: #92979B;
+        padding: 11px 0 30px;
+    }
+    .hospital_competence {
+        font-size: .75rem;
+        color: #474A4D;
+
+    }
+    hr {
+        width: 130px;
+        padding-left: 31px;
+        margin: 10px 0 10px -10px;
+    }
+    .fa-map-marker {
+        padding-right: 5px;
+        font-size: .9rem;
+    }
+    .hospitals_right {
+        margin-left: 38px;
+    }
+}
+
+//Recent Stories
+.recent_stories_section {
+    padding-top: 35px;
+    h1 {
+        font-size: 1.375rem;
+        color: @textColor;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        span {
+            font-weight: 600;
+        }
+    }
+    .col-lg-10 {
+          letter-spacing: 2.2px;
+          padding: 0;
+    }
+    .hr_left {
+        margin: 12px 0 0 0px;
+        width: 368px;
+        background: #DE0000;
+        height: 1px;
+
+    }
+    .hr_right {
+        margin: 12px 0 0 -50px;
+        width: 366px;
+        background: #FA0303;
+        height: 1px;
+
+    }
+}
+
+// Recent Stories
+.recent_stories {
+    padding-top: 50px;
+    .testimonial_name {
+        font-weight: 600;
+        padding: 28px 0px 8px;
+        }
+    .story {
+        width: 31%;
+        height: 350px;
+        border: solid 1px #D7D6D3;
+        border-top: solid #FB3F34 4px;
+        margin: 0 12px;
+        position: relative;
+        img {
+            padding: 26px 13px 18px 16px;
+            float: left;
+        }
+        i {
+            padding-right: 6px;
+        }
+    }
+    .testimonial_text {
+        font-style: italic;
+        line-height: 21px;
+        padding: 25px 15px;
+    }
+    .testimonial_date {
+        font-size: .75rem;
+        padding-top: 20px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #7A7D80;
+        float: left;
+        font-weight: 600;
+        position: absolute;
+        bottom: 18px;
+        left: 30px;
+    }
+    .testimonial_category {
+        font-size: .75rem;
+        padding-top: 10px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #FB4237;
+        float: right;
+        font-weight: 800;
+        position: absolute;
+        bottom: 18px;
+        right: 27px;
+        letter-spacing: 1px;
+    }
+}
+
+// Map Section
+.map_title {
+    padding-top: 50px;
+    h1 {
+        font-size: 1.375rem;
+        color: @textColor;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        span {
+            font-weight: 600;
+        }
+    }
+}
+#map {
+    margin-top: 50px;
+    height: 360px;
+}
+.leaflet-control-attribution {
+    display: none;
+}
+
+//Benefits section
+.benefits_section {
+    padding-top: 50px;
+    text-align: center;
+    border-bottom: solid 1px #D7D6D3;
+    p {
+        text-align: center;
+        padding: 20px 0 60px;
+        line-height: 24px;
+    }
+    i:before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: '';
+        }
+        i {
+              display: inline-block;
+              position: relative;
+              width: 80px;
+              height: 80px;
+        }
+}
+
+// Accreditations section
+.accreditations_section {
+    font-size: 1.375rem;
+    padding: 35px 0 5px;
+    line-height: 26px;
+    color: #1C252C;
+    background: #fff;
+    p {
+        padding-top: 5px;
+    }
+    i:before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: '';
+        }
+        i {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: 0 28px;
+        }
+}
+
+// Footer
+footer {
+    width: 100%;
+    height: 280px;
+    background: #1C252C;
+}
+.footer_info_section {
+    img {
+        margin-top: 50px;
+    }
+    p {
+        width: 235px;
+        font-size: .75rem;
+        color: #687279;
+        text-align: left;
+        padding-top: 20px;
+        line-height: 16px;
+    }
+}
+.hospital_locations,
+.about_company,
+.socials {
+    padding-top: 50px;
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #fff;
+        text-align: left;
+        margin: 11px 0 0 6px;
+    }
+    hr {
+        width: 320px;
+        background: rgba(155, 153, 151, 0.2);
+        border-top: 1px solid rgba(61, 76, 87, 0.20);
+        margin-bottom: 10px;
+    }
+    ul {
+        width: 250px;
+        height: 150px;
+        column-count: 2;
+        li {
+            line-height: 32px;
+            a {
+                color: #687279;
+                transition: @btnTransitions;
+                &:hover {
+                    color: #FC4237;
+                    transition: @btnTransitions;
+                }
+            }
+        }
+    }
+}
+
+.about_company {
+    margin-left: 87px;
+    ul {
+        height: 150px;
+        column-count: 1;
+    }
+    hr {
+        width: 160px;
+    }
+}
+.socials {
+    width: 130px;
+    margin-left: 10px;
+    ul {
+        height: 150px;
+        column-count: 1;
+    }
+    hr {
+        width: 160px;
+    }
+    i {
+        padding: 0 10px 0 0;
+        font-size: 1.1rem;
+    }
+}
+.modal {
+    background: rgba(255, 255, 255, 0.90);
+}
+.close {
+    z-index: 150;
+    position: relative;
+    font-size: 1.9rem;
+    margin: 10px 15px;
+}
+.modal-lg {
+    width: 830px;
+    height: 505px;
+    background: #fff;
+    border: solid 5px #D8DADD;
+    border-radius: 8px;
+}
+.modal-backdrop {
+    background: rgba(255, 255, 255, 0.8);
+}
+.bs-example-modal-lg_video {
+    background: rgba(0, 0, 0, 0.90);
+    .modal-lg {
+        background:rgba(0, 0, 0, 0.90);
+        border: 5px solid #0F0F0F;
+        width: 875px;
+        height: 545px;
+        text-align: center;
+    }
+    .close {
+        color:#fff;
+    }
+}
+.modal-content {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 45px 0 35px;
+        font-size: 1.375rem;
+        color: #FB4237;
+        font-weight: 600;
+        letter-spacing: 4px;
+    }
+    p {
+        color:#000;
+        text-align: center;
+        line-height: 20px;
+        padding: 0 100px;
+    }
+    i:before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: '';
+        }
+    i {
+        display: inline-block;
+        position: relative;
+        width: 110px;
+        height: 110px;
+        margin: 0 30px;
+    }
+    .steps {
+        width: 692px;
+        margin: 50px auto 0;
+        p {
+            color: #000;
+            font-style: italic;
+            line-height: 22px;
+            padding: 10px 0 0;
+            text-align: center;
+        }
+    }
+    .step_1,
+    .step_2,
+    .step_3 {
+        width: 173px;
+        position: relative;
+        float:left;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 53px;
+            right: -18px;
+            width: 40px;
+            height: 8px;
+            background: url(../img/sprite_popup.png) -220px 0px;
+            }
+        }
+    .step_4 {
+        width: 173px;
+        position: relative;
+        float:left;
+    }
+    .btn_got_it {
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        top: 35px;
+        width: 320px;
+        height: 50px;
+        background: #5D6267;
+        color: #fff;
+        outline: none;
+        transition: @btnTransitions;
+        &:hover {
+            background: #6C7075;
+            outline: none;
+            transition: @btnTransitions;
+        }
+        &:active {
+            background:#ED372D;
+            outline: none;
+            transition: @btnTransitions;
+        }
+    }
+}

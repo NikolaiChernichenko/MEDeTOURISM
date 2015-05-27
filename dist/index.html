@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MEDeTOURISM</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="container">
+          <div class="navbar clearfix">
+            <div class="col-lg-3 logo"><img src="img/logo.png"></div>
+            <div class="col-lg-3 col-lg-offset-6 navbar_links"><a class="signin">SignIn</a>
+              <button class="request_bid btn">Request a bid</button>
+            </div>
+          </div>
+          <div class="video_stats row clearfix">
+            <div class="col-lg-5 video_section">
+              <h1><span>Medical bidding. <br></span>Save your health <br>
+                and wealth.
+              </h1>
+              <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg_video" class="btn play_v"><i class="fa fa-play"></i>Play video</button>
+              <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn how_w">How it works</button>
+            </div>
+            <div class="col-lg-3 col-lg-offset-4 stats_section">
+              <h2>Stats to date</h2>
+              <hr>
+              <div class="total clearfix">
+                <p class="number">443</p>
+                <p class="total_description"><span>Total enquiries</span>&nbsp to MEDeTOURISM</p>
+              </div>
+              <div class="total">
+                <p class="number">217</p>
+                <p class="total_description"><span>Total bids</span>&nbsp accepted on MEDeTOURISM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row search_section clearfix">
+        <div class="container">
+          <div class="col-lg-5 col-lg-offset-1">
+            <div class="input-group">
+              <p>I’m looking for</p>
+              <input placeholder="Search for..." class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <p class="destination">Destination</p>
+            <select name="All countries" class="btn-default dropdown-toggle">
+              <option value="All countries">All countries</option>
+              <option value="Canada">Canada</option>
+              <option value="Spain">Spain</option>
+              <option value="Germany">Germany</option>
+            </select>
+          </div>
+          <div class="col-lg-2"><span class="input-group-btn">
+              <button type="button" class="btn btn-default search_btn">Search</button></span></div>
+        </div>
+      </div>
+      <div class="row commence_bidding_section">
+        <div class="container">
+          <div class="col-lg-1">
+            <hr class="hr_left">
+          </div>
+          <div class="col-lg-10">
+            <h1>Commence bidding by&nbsp<span>ELITE hospitals</span>&nbsp for your procedure?</h1>
+          </div>
+          <div class="col-lg-1">
+            <hr class="hr_right">
+          </div>
+          <div class="row commence_bidding_text clearfix">
+            <div class="col-lg-5 col-lg-offset-1"><i class="sprite icon-icon-flash_s"></i>
+              <p>Only a select number of elite hospitals are invited to bid for your procedure, ensuring only the best quality.</p>
+            </div>
+            <div class="col-lg-5 col-lg-offset-1 flash_icon"><i class="sprite icon-icon-star_s"></i>
+              <p>
+                These low prices and offers are unique to MEDeTOURISM <br>
+                as a result of our real time dynamic bidding process.
+              </p>
+            </div>
+          </div>
+          <div class="row request_bid_section clearfix">
+            <hr class="col-lg-4 hr_left">
+            <div class="col-lg-3">
+              <button class="request_button btn-danger"><i class="sprite icon-icon-plus"></i>REQUEST A BID</button>
+            </div>
+            <hr class="col-lg-4 hr_right">
+          </div>
+          <div class="row featured_procedure">
+            <div class="col-lg-3"><i class="sprite icon-icon-cam"></i>
+              <h1>Featured Procedure</h1>
+              <h3><span>Request a bid</span>&nbsp now on Cancer, Cosmetics, Dentistry, Orthopedics, Cardiovascular, Weight Loss andand many other specialty procedures.</h3>
+            </div>
+            <div class="col-lg-3 procedures_block">
+              <div class="procedures procedures_1">
+                <h1>Cosmetics</h1>
+                <h2>Latest bids</h2>
+                <div class="procedures_prices clearfix">
+                  <p class="procedure_1_title">Breast augmentation</p>
+                  <p class="procedure_1_price">USD $2,450</p>
+                  <hr>
+                </div>
+                <div class="procedures_prices">
+                  <p class="procedure_1_title">Breast augmentation</p>
+                  <p class="procedure_1_price">USD $2,450</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 procedures_block">
+              <div class="procedures procedures_2">
+                <h1>Dentistry</h1>
+                <h2>Latest bids</h2>
+                <div class="procedures_prices clearfix">
+                  <p class="procedure_1_title">Braces</p>
+                  <p class="procedure_1_price">USD $1,775</p>
+                  <hr>
+                </div>
+                <div class="procedures_prices">
+                  <p class="procedure_1_title">Bridges</p>
+                  <p class="procedure_1_price">USD $480</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 procedures_block">
+              <div class="procedures procedures_3">
+                <h1>Orthopedics</h1>
+                <h2>Latest bids</h2>
+                <div class="procedures_prices clearfix">
+                  <p class="procedure_1_title">Hip Replacement</p>
+                  <p class="procedure_1_price">USD $3,710</p>
+                  <hr>
+                </div>
+                <div class="procedures_prices">
+                  <p class="procedure_1_title">Arthroscopy</p>
+                  <p class="procedure_1_price">USD $1,220</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row popular_locations">
+            <div class="col-lg-3"><i class="sprite icon-icon-hospital"></i>
+              <h1>Popular Locations</h1>
+              <h3><span>Request a bid</span>&nbsp now on popular locations to have your procedure carried out. <br><span class="tiny_text">*Compared with U.S. prices.</span></h3>
+            </div>
+            <div class="col-lg-3 locations_block">
+              <div class="locations location_1">
+                <h1>Malaysia</h1>
+                <h2>Save 80%*</h2>
+              </div>
+            </div>
+            <div class="col-lg-3 locations_block">
+              <div class="locations location_2">
+                <h1>Thailand</h1>
+                <h2>Save 75%*</h2>
+              </div>
+            </div>
+            <div class="col-lg-3 locations_block">
+              <div class="locations location_3">
+                <h1>Singapore</h1>
+                <h2>Save 40%*</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row featured_hospitals">
+            <div class="col-lg-3 globe_icon"><i class="sprite icon-icon-globe"></i>
+              <h1>Featured Hospitals</h1>
+              <h3><span>Request a bid</span>&nbsp now from featured hospitals, as selected by the MEDeTOURISM staff.<br></h3>
+            </div>
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="hospitals_block"><img src="img/dr_sunil.jpg">
+                  <p class="hospital_title">Dr. Sunil Clinic</p>
+                  <p class="hospital_location"><i class="sprite fa fa-map-marker"></i>Bangkok, Thailand</p>
+                  <p class="hospital_competence">Diagnostics</p>
+                  <hr>
+                  <p class="hospital_competence">Therapy</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="hospitals_block"><img src="img/Bangpakok.jpg">
+                  <p class="hospital_title">Bangpakok 9 Internati...</p>
+                  <p class="hospital_location"><i class="sprite fa fa-map-marker"></i>Sandakan, Malaysia</p>
+                  <p class="hospital_competence">Root Canal Treatment</p>
+                  <hr>
+                  <p class="hospital_competence">Dental Implants</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 hospitals_right">
+              <div class="row">
+                <div class="hospitals_block"><img src="img/nair_dental.jpg">
+                  <p class="hospital_title">Nair Dental Surgery</p>
+                  <p class="hospital_location"><i class="sprite fa fa-map-marker"></i>Kuala Lumpur, Malaysia</p>
+                  <p class="hospital_competence">Dental Braces</p>
+                  <hr>
+                  <p class="hospital_competence">Dental Crown</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="hospitals_block"><img src="img/tanfer.jpg">
+                  <p class="hospital_title">Tanfer Klinik</p>
+                  <p class="hospital_location"><i class="sprite fa fa-map-marker"></i>Chiang Mai, Thailand</p>
+                  <p class="hospital_competence">Diagnostics</p>
+                  <hr>
+                  <p class="hospital_competence">Therapy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row recent_stories_section clearfix">
+            <div class="col-lg-4">
+              <hr class="hr_left">
+            </div>
+            <div class="col-lg-4">
+              <h1>RECENT STORIES</h1>
+            </div>
+            <div class="col-lg-4">
+              <hr class="hr_right">
+            </div>
+          </div>
+          <div class="row recent_stories clearfix">
+            <div class="col-lg-4 story"><img src="img/jack.png">
+              <p class="testimonial_name">Jack Dickson</p><i class="sprite fa fa-map-marker"></i>Sydney, Australia
+              <p class="testimonial_text">“I just arrived back from Bangkok, Thailand having had Breast Augmentation following receipt of three bids from Thai internationally accredited hospitals so I knew the bids were related to elite hospitals only. I was more than happy with the huge savings I made and quality of care during the procedure.”</p>
+              <p class="testimonial_date">5 Days ago</p>
+              <p class="testimonial_category">Surgery</p>
+            </div>
+            <div class="col-lg-4 story"><img src="img/laura.png">
+              <p class="testimonial_name">Laura Steers</p><i class="sprite fa fa-map-marker"></i>Melbourne, Australia
+              <p class="testimonial_text">“I just arrived back from Bangkok, Thailand having had Breast Augmentation following receipt of three bids from Thai internationally accredited hospitals so I knew the bids were related to elite hospitals only. I was more than happy with the huge savings I made and quality of care during the procedure.”</p>
+              <p class="testimonial_date">2 Weeks ago</p>
+              <p class="testimonial_category">Dentistry</p>
+            </div>
+            <div class="col-lg-4 story"><img src="img/pippa.png">
+              <p class="testimonial_name">Pippa Jones</p><i class="sprite fa fa-map-marker"></i>Sydney, Australia
+              <p class="testimonial_text">“After years of playing rugby I finally decided to have a Rhino (nose straightened) procedure. I logged onto MEDeTOURISM.com and submitted my details for the procedure. I received three bids from Singapore hospitals as I wanted to visit my family at the same time and I was amazed at the savings on offer.”</p>
+              <p class="testimonial_date">1 Month ago</p>
+              <p class="testimonial_category">Surgery</p>
+            </div>
+          </div>
+          <div class="row map_title clearfix">
+            <div class="col-lg-12">
+              <h1>OVER<span> &nbsp 2000 TOP HOSPITALS</span>&nbsp ACROSS ALL ASIA</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="map"></div>
+          </div>
+        </div>
+        <div class="row benefits_section clearfix">
+          <div class="container clearfix">
+            <div class="col-lg-3"><i class="sprite icon-icon-star"></i>
+              <p>Quality healthcare, saving up to 70% few more words.</p>
+            </div>
+            <div class="col-lg-3"><i class="sprite icon-icon-free"></i>
+              <p>World’s Top Hospitals bid for your procedure.</p>
+            </div>
+            <div class="col-lg-3"><i class="sprite icon-icon-tick"></i>
+              <p>MEDeTOURISM is free to use and book at anytime.</p>
+            </div>
+            <div class="col-lg-3"><i class="sprite icon-icon-percent"></i>
+              <p>Listings of international accreditation hospitals.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row accreditations_section">
+          <div class="container">
+            <div class="col-lg-3">
+              <p>International Health <br> Accreditations</p>
+            </div>
+            <div class="col-lg-9">
+              <div class="accreditations_logos"><i class="sprite icon-f_logo_1"></i><i class="sprite icon-f_logo_2"></i><i class="sprite icon-f_logo_3"></i><i class="sprite icon-f_logo_4"></i><i class="sprite icon-f_logo_5"></i></div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="container">
+            <div class="col-lg-3 footer_info_section"><img src="img/logo.png">
+              <p>MEDeTOURISM.com.au offers an innovative FREE easy-to-use platform where you can search & book medical & surgical procedures with elite Internationally Accredited Asian Hospitals, for the best prices, saving up to 70% compared to Australian medical costs.</p>
+            </div>
+            <div class="col-lg-3 col-lg-offset-1 hospital_locations">
+              <h2>HOSPITAL LOCATIONS</h2>
+              <hr>
+              <ul>
+                <li><a href="#">Malaysia</a></li>
+                <li><a href="#">Indonesia</a></li>
+                <li><a href="#">Thailand</a></li>
+                <li><a href="#">Vietnam</a></li>
+                <li><a href="#">Singapore</a></li>
+                <li><a href="#">South Korea</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">UAE</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 about_company">
+              <h2>COMPANY</h2>
+              <hr>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Terms & Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 socials">
+              <h2>Socials</h2>
+              <hr>
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </header>
+  </body>
+  <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" class="modal fade bs-example-modal-lg">
+    <div class="modal-dialog modal-lg">
+      <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+      <div class="modal-content">
+        <h1>How it works?</h1>
+        <p>Simply explore our website and search for a hospital by the country of your choice or the procedure you are looking for, submit your details, then sit back and wait for the hospitals to bid for your procedure. </p>
+        <div class="steps">
+          <div class="step_1"><i class="sprite icon-step_1"></i>
+            <p>Search by country or required procedure.</p>
+          </div>
+          <div class="step_2"><i class="sprite icon-step_2"></i>
+            <p>Login and submit your personal details.</p>
+          </div>
+          <div class="step_3"><i class="sprite icon-step_3"></i>
+            <p>Wait 48 hours for hospitals to bid.</p>
+          </div>
+          <div class="step_4"><i class="sprite icon-step_4"></i>
+            <p>Select the hospital that suit your needs.</p>
+          </div>
+        </div>
+        <button class="btn btn-lg btn_got_it">Okay, I got it!</button>
+      </div>
+    </div>
+  </div>
+  <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" class="modal fade bs-example-modal-lg_video">
+    <div class="modal-dialog modal-lg">
+      <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+      <div class="modal-content"></div>
+      <iframe width="820" height="444" src="https://www.youtube.com/embed/38IqQpwPe7s" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</html>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="js/main.js"></script>

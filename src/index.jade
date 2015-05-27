@@ -1,0 +1,388 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset='utf-8')
+		title MEDeTOURISM
+		link(rel="stylesheet", href="css/style.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css")
+		link(rel="stylesheet", href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css")
+
+	body
+		header
+			.row
+				.container
+					.navbar.clearfix
+						.col-lg-3.logo
+							img(src='img/logo.png')
+						.col-lg-3.col-lg-offset-6.navbar_links
+							a.signin SignIn
+							button.request_bid.btn Request a bid
+
+					.video_stats.row.clearfix
+						.col-lg-5.video_section
+							h1
+								span Medical bidding. <br>
+								|Save your health <br>
+								|and wealth.
+
+							button.btn.play_v(type="button", data-toggle="modal" data-target=".bs-example-modal-lg_video")
+								i.fa.fa-play
+								|Play video
+							button.btn.how_w(type="button", data-toggle="modal" data-target=".bs-example-modal-lg") How it works
+
+						.col-lg-3.col-lg-offset-4.stats_section
+							h2 Stats to date
+							hr
+							.total.clearfix
+								p.number 443
+								p.total_description
+									span Total enquiries
+									| &nbsp to MEDeTOURISM
+							.total
+								p.number 217
+								p.total_description
+									span Total bids
+									| &nbsp accepted on MEDeTOURISM
+
+			.row.search_section.clearfix
+				.container
+					.col-lg-5.col-lg-offset-1
+						.input-group
+							p I’m looking for
+							input.form-control(placeholder="Search for...")
+					.col-lg-3
+							p.destination Destination
+							select.btn-default.dropdown-toggle(name="All countries")
+								option(value="All countries") All countries
+								option(value="Canada") Canada
+								option(value="Spain") Spain
+								option(value="Germany") Germany
+					.col-lg-2
+							span.input-group-btn
+									button.btn.btn-default.search_btn(type="button") Search
+
+			//- Main Content Section
+			.row.commence_bidding_section
+				.container
+					.col-lg-1
+						hr.hr_left
+					.col-lg-10
+						h1 Commence bidding by&nbsp
+							span ELITE hospitals
+							|&nbsp for your procedure?
+					.col-lg-1
+						hr.hr_right
+
+					.row.commence_bidding_text.clearfix
+						.col-lg-5.col-lg-offset-1
+							i.sprite.icon-icon-flash_s
+							p Only a select number of elite hospitals are invited to bid for your procedure, ensuring only the best quality.
+						.col-lg-5.col-lg-offset-1.flash_icon
+							i.sprite.icon-icon-star_s
+							p These low prices and offers are unique to MEDeTOURISM <br>
+								|as a result of our real time dynamic bidding process.
+
+					.row.request_bid_section.clearfix
+						hr.col-lg-4.hr_left
+						.col-lg-3
+							button.request_button.btn-danger
+								i.sprite.icon-icon-plus
+								|REQUEST A BID
+						hr.col-lg-4.hr_right
+
+					//- Featured Procedure
+					.row.featured_procedure
+						.col-lg-3
+							i.sprite.icon-icon-cam
+							h1 Featured Procedure
+							h3
+								span Request a bid
+								|&nbsp now on Cancer, Cosmetics, Dentistry, Orthopedics, Cardiovascular, Weight Loss andand many other specialty procedures.
+
+						//- 1st column
+						.col-lg-3.procedures_block
+							.procedures.procedures_1
+								h1 Cosmetics
+								h2 Latest bids
+								.procedures_prices.clearfix
+									p.procedure_1_title Breast augmentation
+									p.procedure_1_price USD $2,450
+									hr
+								.procedures_prices
+									p.procedure_1_title Breast augmentation
+									p.procedure_1_price USD $2,450
+						//- 2nd column
+						.col-lg-3.procedures_block
+							.procedures.procedures_2
+								h1 Dentistry
+								h2 Latest bids
+								.procedures_prices.clearfix
+									p.procedure_1_title Braces
+									p.procedure_1_price USD $1,775
+									hr
+								.procedures_prices
+									p.procedure_1_title Bridges
+									p.procedure_1_price USD $480
+						//- 3d column
+						.col-lg-3.procedures_block
+							.procedures.procedures_3
+								h1 Orthopedics
+								h2 Latest bids
+								.procedures_prices.clearfix
+									p.procedure_1_title Hip Replacement
+									p.procedure_1_price USD $3,710
+									hr
+								.procedures_prices
+									p.procedure_1_title Arthroscopy
+									p.procedure_1_price USD $1,220
+
+
+					//- Popular Location
+					.row.popular_locations
+						.col-lg-3
+							i.sprite.icon-icon-hospital
+							h1 Popular Locations
+							h3
+								span Request a bid
+								|&nbsp now on popular locations to have your procedure carried out. <br>
+								span.tiny_text *Compared with U.S. prices.
+
+						//- 1st column
+						.col-lg-3.locations_block
+							.locations.location_1
+								h1 Malaysia
+								h2 Save 80%*
+
+						//- 2nd column
+						.col-lg-3.locations_block
+							.locations.location_2
+								h1 Thailand
+								h2 Save 75%*
+
+						//- 3d column
+						.col-lg-3.locations_block
+							.locations.location_3
+								h1 Singapore
+								h2 Save 40%*
+
+					//- Featured Hospitals
+					.row.featured_hospitals
+						.col-lg-3.globe_icon
+							i.sprite.icon-icon-globe
+							h1 Featured Hospitals
+							h3
+								span Request a bid
+								|&nbsp now from featured hospitals, as selected by the MEDeTOURISM staff.<br>
+
+						.col-lg-4
+							.row
+								.hospitals_block
+									img(src='img/dr_sunil.jpg')
+									p.hospital_title Dr. Sunil Clinic
+
+									p.hospital_location
+										i.sprite.fa.fa-map-marker
+										|Bangkok, Thailand
+									p.hospital_competence Diagnostics
+									hr
+									p.hospital_competence Therapy
+							.row
+								.hospitals_block
+									img(src='img/Bangpakok.jpg')
+									p.hospital_title Bangpakok 9 Internati...
+
+									p.hospital_location
+										i.sprite.fa.fa-map-marker
+										|Sandakan, Malaysia
+									p.hospital_competence Root Canal Treatment
+									hr
+									p.hospital_competence Dental Implants
+
+						//- Hospitals right column
+						.col-lg-4.hospitals_right
+							.row
+								.hospitals_block
+									img(src='img/nair_dental.jpg')
+									p.hospital_title Nair Dental Surgery
+
+									p.hospital_location
+										i.sprite.fa.fa-map-marker
+										|Kuala Lumpur, Malaysia
+									p.hospital_competence Dental Braces
+									hr
+									p.hospital_competence Dental Crown
+							.row
+								.hospitals_block
+									img(src='img/tanfer.jpg')
+									p.hospital_title Tanfer Klinik
+
+									p.hospital_location
+										i.sprite.fa.fa-map-marker
+										|Chiang Mai, Thailand
+									p.hospital_competence Diagnostics
+									hr
+									p.hospital_competence Therapy
+
+					//- Recent stories
+					.row.recent_stories_section.clearfix
+						.col-lg-4
+							hr.hr_left
+						.col-lg-4
+							h1 RECENT STORIES
+						.col-lg-4
+							hr.hr_right
+					.row.recent_stories.clearfix
+						.col-lg-4.story
+							img(src='img/jack.png')
+							p.testimonial_name Jack Dickson
+							i.sprite.fa.fa-map-marker
+							|Sydney, Australia
+							p.testimonial_text.
+								“I just arrived back from Bangkok, Thailand having had Breast Augmentation following receipt of three bids from Thai internationally accredited hospitals so I knew the bids were related to elite hospitals only. I was more than happy with the huge savings I made and quality of care during the procedure.”
+							p.testimonial_date 5 Days ago
+							p.testimonial_category Surgery
+						.col-lg-4.story
+							img(src='img/laura.png')
+							p.testimonial_name Laura Steers
+							i.sprite.fa.fa-map-marker
+							|Melbourne, Australia
+							p.testimonial_text.
+								“I just arrived back from Bangkok, Thailand having had Breast Augmentation following receipt of three bids from Thai internationally accredited hospitals so I knew the bids were related to elite hospitals only. I was more than happy with the huge savings I made and quality of care during the procedure.”
+							p.testimonial_date 2 Weeks ago
+							p.testimonial_category Dentistry
+						.col-lg-4.story
+							img(src='img/pippa.png')
+							p.testimonial_name Pippa Jones
+							i.sprite.fa.fa-map-marker
+							|Sydney, Australia
+							p.testimonial_text.
+								“After years of playing rugby I finally decided to have a Rhino (nose straightened) procedure. I logged onto MEDeTOURISM.com and submitted my details for the procedure. I received three bids from Singapore hospitals as I wanted to visit my family at the same time and I was amazed at the savings on offer.”
+							p.testimonial_date 1 Month ago
+							p.testimonial_category Surgery
+
+					//- Map Section
+					.row.map_title.clearfix
+						.col-lg-12
+							h1 OVER
+								span  &nbsp 2000 TOP HOSPITALS
+								|&nbsp ACROSS ALL ASIA
+				.row
+					.col-lg-12
+						#map
+				//- Benefits section
+				.row.benefits_section.clearfix
+					.container.clearfix
+						.col-lg-3
+							i.sprite.icon-icon-star
+							p Quality healthcare, saving up to 70% few more words.
+						.col-lg-3
+							i.sprite.icon-icon-free
+							p World’s Top Hospitals bid for your procedure.
+						.col-lg-3
+							i.sprite.icon-icon-tick
+							p MEDeTOURISM is free to use and book at anytime.
+						.col-lg-3
+							i.sprite.icon-icon-percent
+							p Listings of international accreditation hospitals.
+
+				.row.accreditations_section
+					.container
+						.col-lg-3
+							p International Health <br> Accreditations
+						.col-lg-9
+							.accreditations_logos
+								i.sprite.icon-f_logo_1
+								i.sprite.icon-f_logo_2
+								i.sprite.icon-f_logo_3
+								i.sprite.icon-f_logo_4
+								i.sprite.icon-f_logo_5
+				footer
+					.container
+						.col-lg-3.footer_info_section
+							img(src='img/logo.png')
+							p MEDeTOURISM.com.au offers an innovative FREE easy-to-use platform where you can search & book medical & surgical procedures with elite Internationally Accredited Asian Hospitals, for the best prices, saving up to 70% compared to Australian medical costs.
+
+						.col-lg-3.col-lg-offset-1.hospital_locations
+							h2 HOSPITAL LOCATIONS
+							hr
+							ul
+								li
+									a(href='#') Malaysia
+								li
+									a(href='#') Indonesia
+								li
+									a(href='#') Thailand
+								li
+									a(href='#') Vietnam
+								li
+									a(href='#') Singapore
+								li
+									a(href='#') South Korea
+								li
+									a(href='#') India
+								li
+									a(href='#') UAE
+						.col-lg-2.about_company
+							h2 COMPANY
+							hr
+							ul
+								li
+									a(href="#") About us
+								li
+									a(href="#") FAQ
+								li
+									a(href="#") Contact us
+								li
+									a(href="#") Terms & Privacy
+						.col-lg-2.socials
+							h2 Socials
+							hr
+							ul
+								li
+									a(href="#")
+										i.fa.fa-facebook
+										|Facebook
+								li
+									a(href="#")
+										i.fa.fa-twitter
+										|Twitter
+
+
+
+	//- How it works? Modal
+	.modal.fade.bs-example-modal-lg(tabindex="-1", role="dialog", aria-labelledby="myLargeModalLabel" ,aria-hidden="true")
+		.modal-dialog.modal-lg
+			button( type="button", data-dismiss="modal", aria-label="Close" ).close
+				span(aria-hidden="true") ×
+			.modal-content
+				h1 How it works?
+				p.
+					Simply explore our website and search for a hospital by the country of your choice or the procedure you are looking for, submit your details, then sit back and wait for the hospitals to bid for your procedure. 
+				.steps
+					.step_1
+						i.sprite.icon-step_1
+						p Search by country or required procedure.
+					.step_2
+						i.sprite.icon-step_2
+						p Login and submit your personal details.
+					.step_3
+						i.sprite.icon-step_3
+						p Wait 48 hours for hospitals to bid.
+					.step_4
+						i.sprite.icon-step_4
+						p Select the hospital that suit your needs.
+				button.btn.btn-lg.btn_got_it Okay, I got it!
+
+	//- Video Modal
+	.modal.fade.bs-example-modal-lg_video(tabindex="-1", role="dialog", aria-labelledby="myLargeModalLabel" ,aria-hidden="true")
+		.modal-dialog.modal-lg
+			button( type="button", data-dismiss="modal", aria-label="Close" ).close
+				span(aria-hidden="true") ×
+			.modal-content
+			iframe(width="820" height="444" src="https://www.youtube.com/embed/38IqQpwPe7s" frameborder="0" allowfullscreen)
+
+//- JS
+script(src='https://code.jquery.com/jquery-1.11.3.min.js')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+script(src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js")
+script(src="js/main.js")

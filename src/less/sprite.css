@@ -1,0 +1,138 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-f_logo_1:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -229px;
+  width: 60px;
+  height: 60px;
+}
+.icon-f_logo_2:before {
+  background-image: url(../img/sprite.png);
+  background-position: -144px -162px;
+  width: 65px;
+  height: 60px;
+}
+.icon-f_logo_3:before {
+  background-image: url(../img/sprite.png);
+  background-position: -80px -81px;
+  width: 84px;
+  height: 58px;
+}
+.icon-f_logo_4:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -162px;
+  width: 72px;
+  height: 67px;
+}
+.icon-f_logo_5:before {
+  background-image: url(../img/sprite.png);
+  background-position: -72px -162px;
+  width: 72px;
+  height: 60px;
+}
+.icon-icon-arrow:before {
+  background-image: url(../img/sprite.png);
+  background-position: -240px -186px;
+  width: 13px;
+  height: 8px;
+}
+.icon-icon-cam:before {
+  background-image: url(../img/sprite.png);
+  background-position: -240px -128px;
+  width: 64px;
+  height: 58px;
+}
+.icon-icon-flash_s:before {
+  background-image: url(../img/sprite.png);
+  background-position: -60px -229px;
+  width: 48px;
+  height: 49px;
+}
+.icon-icon-free:before {
+  background-image: url(../img/sprite.png);
+  background-position: -160px 0px;
+  width: 80px;
+  height: 81px;
+}
+.icon-icon-globe:before {
+  background-image: url(../img/sprite.png);
+  background-position: -240px 0px;
+  width: 64px;
+  height: 64px;
+}
+.icon-icon-hospital:before {
+  background-image: url(../img/sprite.png);
+  background-position: -240px -64px;
+  width: 64px;
+  height: 64px;
+}
+.icon-icon-percent:before {
+  background-image: url(../img/sprite.png);
+  background-position: -80px 0px;
+  width: 80px;
+  height: 81px;
+}
+.icon-icon-star:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -81px;
+  width: 80px;
+  height: 81px;
+}
+.icon-icon-star_s:before {
+  background-image: url(../img/sprite.png);
+  background-position: -164px -81px;
+  width: 48px;
+  height: 49px;
+}
+.icon-icon-tick:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 80px;
+  height: 81px;
+}
+.icon-icon-plus:before {
+  background-image: url(../img/sprite.png);
+  background-position: -240px -186px;
+  width: 24px;
+  height: 24px;
+}
+/*Popup Icons*/
+.icon-step_1:before {
+  background-image: url(../img/sprite_popup.png);
+  background-position: 0px 0px;
+  width: 110px;
+  height: 110px;
+}
+.icon-step_2:before {
+  background-image: url(../img/sprite_popup.png);
+  background-position: -110px 0px;
+  width: 110px;
+  height: 110px;
+}
+.icon-step_3:before {
+  background-image: url(../img/sprite_popup.png);
+  background-position: 0px -110px;
+  width: 110px;
+  height: 110px;
+}
+.icon-step_4:before {
+  background-image: url(../img/sprite_popup.png);
+  background-position: -110px -110px;
+  width: 110px;
+  height: 110px;
+}
+.icon-step_dots:before {
+  background-image: url(../img/sprite_popup.png);
+  background-position: -220px 0px;
+  width: 40px;
+  height: 8px;
+}
